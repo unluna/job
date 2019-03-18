@@ -1,0 +1,28 @@
+//错误提示信息
+.error-msg{
+  color:red;
+  text-align: center;
+  font-size:18px ;
+}
+//导航栏始终在底部
+.am-tab-bar{
+  position: fixed;
+  bottom:0;
+  width: 100%;
+  height: inherit;//包裹内容 => 内容多高我多高
+}
+//让标题始终在顶部
+.stick-header{
+  position: fixed;
+  top:0;
+  width: 100%;
+  z-index: 10;
+}
+/*消息文本居右*/
+#chat-page .chat-me .am-list-extra {
+  flex-basis: auto; /*宽度包裹内容*/
+}
+#chat-page .chat-me .am-list-content {
+  padding-right: 15px;
+  text-align: right;
+}
